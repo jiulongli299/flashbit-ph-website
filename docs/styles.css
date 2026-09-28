@@ -124,3 +124,55 @@ a:focus-visible,button:focus-visible{outline:3px solid currentColor;outline-offs
  .product-intro h1{font-size:30px}.section-heading h2,.directory-intro h2{font-size:26px}.brand-row,.loan-facts{padding-inline:20px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Company registration certificate and contact links. */
+.footer-certificate{margin-top:20px;max-width:240px}
+.footer-certificate>a{display:inline-flex;flex-direction:column;gap:8px;font-size:12px;text-decoration:none}
+.footer-certificate img{display:block;width:160px;max-width:100%;height:auto;border:1px solid #dbe3e5;border-radius:4px;background:#fff}
+.footer-certificate span{text-decoration:underline;text-underline-offset:3px}
+.footer-certificate p{margin-top:8px;font-size:11px;line-height:1.6;opacity:.85}
+.email-link{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.footer-certificate a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+
+/* Wide lifestyle heroes, with live text and separate mobile photography. */
+.product-banner{position:relative;isolation:isolate;overflow:hidden}
+.product-banner .hero-scene{position:absolute;inset:0 0 0 auto;width:76%;height:100%;object-fit:cover;object-position:65% 44%;z-index:-2}
+.product-banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--hero) 0%,var(--hero) 29%,color-mix(in srgb,var(--hero) 96%,transparent) 38%,color-mix(in srgb,var(--hero) 62%,transparent) 49%,transparent 68%)}
+.product-banner .product-intro-grid{display:flex;align-items:center;min-height:520px;padding-block:64px}
+.product-banner .product-intro-copy{width:44%;max-width:490px}
+.product-banner h1{font-size:44px;line-height:1.15;letter-spacing:-.035em}
+.product-banner .product-description{font-size:16px;line-height:1.7}
+@media(min-width:1600px){.product-banner .hero-scene{width:72%;object-position:center 40%}}
+@media(min-width:761px) and (max-width:1050px){.product-banner h1{font-size:36px}.product-banner .product-intro-copy{width:47%}.product-banner .product-intro-grid{min-height:480px}}
+@media(max-width:760px){
+.product-banner{display:flex;flex-direction:column}
+.product-banner::before{display:none}
+.product-banner .product-intro-grid{order:0;min-height:0;padding-block:36px}
+.product-banner .product-intro-copy{width:100%;max-width:none}
+.product-banner h1{font-size:34px;max-width:520px}
+.product-banner .hero-scene{position:static;order:1;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;z-index:auto}
+}
+
+/* All pages share the company footer. */
+.brand-page .site-footer{background:#16494c;color:#fff}
+.brand-page .footer-company>p,.brand-page .footer-brands>a,.brand-page .footer-contact dd{color:#e0eded}
+.brand-page .footer-company .footer-caption,.brand-page .footer-contact dt,.brand-page .footer-bottom p{color:#cddfe0}
+.brand-page .footer-bottom,.brand-page .footer-grid>div+div{border-color:#477174}
+.brand-page .site-footer a:active{color:#fff}
+
+.company-scene img{aspect-ratio:2.5/1;object-fit:cover;object-position:center}
+@media(max-width:760px){.company-scene img{aspect-ratio:4/3;object-position:50% center}}
+/* Keep hero subjects framed on wide desktop displays. */
+@media(min-width:761px){
+.product-banner .hero-scene{width:min(76%,1120px);object-position:right top}
+}
+@media(min-width:761px){
+.product-banner::before{left:auto;right:0;width:min(76%,1120px);background:linear-gradient(90deg,var(--hero) 0%,color-mix(in srgb,var(--hero) 96%,transparent) 12%,color-mix(in srgb,var(--hero) 62%,transparent) 30%,transparent 56%)}
+}
+/* Taller, centered desktop composition rather than edge-anchored subjects. */
+@media(min-width:761px){
+.product-banner .product-intro-grid{min-height:620px}
+.product-banner .hero-scene{right:max(0px,calc((100vw - 1520px)/2));width:min(80%,1240px);object-position:right top}
+.product-banner::before{right:max(0px,calc((100vw - 1520px)/2));width:min(80%,1240px);background:linear-gradient(90deg,var(--hero) 0%,color-mix(in srgb,var(--hero) 96%,transparent) 12%,color-mix(in srgb,var(--hero) 62%,transparent) 30%,transparent 56%,transparent 90%,var(--hero) 100%)}
+}
+@media(min-width:761px) and (max-width:1050px){.product-banner .product-intro-grid{min-height:540px}}

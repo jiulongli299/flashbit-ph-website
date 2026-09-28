@@ -47,3 +47,9 @@ No typography, logo, watermark, interface overlay, conspicuous shipping label, m
 `flashbit-community-v1.png` is an unchanged AI-generated wide image (2170 × 725), visually inspected before use. An ordinary man arranges stock at a community shop while a woman checks her phone. The complete scene is displayed at its native aspect ratio to keep heads and working hands visible. No customer endorsement or claim of actual borrower identity is made. SHA-256: `e91e44a8c9151e6a8bbd9fddb93b04328e3c1b64f22899a430dac3a8ee4da8f7`.
 
 Prompt direction: candid, eye-level, natural-daylight Philippine community shop; normal clothing, skin and expressions; practical stock and everyday phone use; no direct-to-camera posing, cash, loan UI, flags, Jeepneys, tourism, luxury or poverty framing.
+
+
+## Product hero revision — 28 September 2026
+Three AI-generated fictional Philippine lifestyle images, created with the built-in image_gen tool: livaya-hero-v3.png (family homework), alago-hero-v3.png (neighborhood shop worker), sulivo-hero-v3.png (home-based seller). These are illustrative scenes, not customer testimonials.
+
+Homepage community image flashbit-community-v2.png: fictional Philippine neighborhood shop interaction, generated with built-in image_gen on 28 September 2026.

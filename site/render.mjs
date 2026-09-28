@@ -41,7 +41,7 @@ function header(brand = null) {
   const navigation = brand
     ? '<a href="#features">Loan details</a><a href="#how-it-works">How it works</a><a href="#contact">Contact us</a>'
     : `<a href="${siteUrl('#top')}" aria-current="page">Home</a><a href="${siteUrl('#brands')}">Our Brands</a><a href="#contact">Contact us</a>`;
-  return `<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner">${logo}<nav aria-label="${brand ? brand.name : 'Main'} navigation">${navigation}</nav></div></header>`;
+  return `<a class="skip" href="#main">Skip to content</a><header class="site-header">${brand ? `<a class="back-home" href="${siteUrl('')}" aria-label="Back to Flashbit home"><span aria-hidden="true">←</span> Home</a>` : ''}<div class="wrap header-inner">${logo}<nav aria-label="${brand ? brand.name : 'Main'} navigation">${navigation}</nav></div></header>`;
 }
 function certificate() {
   return `<div class="footer-certificate"><a href="${siteUrl('assets/amlc-provisional-certificate.jpg')}" target="_blank" rel="noopener" aria-label="View Flashbit Financing Corp AMLC provisional certificate (opens in a new tab)"><img src="${siteUrl('assets/amlc-provisional-certificate.jpg')}" width="936" height="662" loading="lazy" alt="AMLC Provisional Certificate of Registration for Flashbit Financing Corp"><span>View certificate ↗</span></a><p>AMLC Provisional Registration<br>FLASHBIT FINANCING CORP</p></div>`;

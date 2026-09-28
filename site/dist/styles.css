@@ -176,3 +176,11 @@ a:focus-visible,button:focus-visible{outline:3px solid currentColor;outline-offs
 .product-banner::before{right:max(0px,calc((100vw - 1520px)/2));width:min(80%,1240px);background:linear-gradient(90deg,var(--hero) 0%,color-mix(in srgb,var(--hero) 96%,transparent) 12%,color-mix(in srgb,var(--hero) 62%,transparent) 30%,transparent 56%,transparent 90%,var(--hero) 100%)}
 }
 @media(min-width:761px) and (max-width:1050px){.product-banner .product-intro-grid{min-height:540px}}
+
+/* Explicit company-home link on product headers. */
+.brand-page .site-header{position:relative}
+.back-home{position:absolute;left:24px;top:18px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #dbe3e8;border-radius:6px;color:#354e5e;font-size:14px;font-weight:700;background:#fff}
+.back-home:hover{background:#f2f6f8}
+.back-home:focus-visible{outline:3px solid var(--brand-ink);outline-offset:3px}
+@media(max-width:1440px){.brand-page .header-inner{padding-left:120px}}
+@media(max-width:760px){.back-home{left:20px;top:16px;padding:0 10px}.brand-page .header-inner{padding-left:0}.brand-page .header-inner>.brand-wordmark{margin-left:110px}}
